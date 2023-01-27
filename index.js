@@ -279,3 +279,47 @@ function generatePasswordSymbol() {
   }
   passwordUpdate();
 }
+
+document.getElementById("copy-password1").onclick = function() {
+  let copyTextarea = document.createElement("textarea");
+  copyTextarea.style.position = "fixed";
+  copyTextarea.style.opacity = "0";
+  copyTextarea.textContent = document.getElementById("first-pass").value;
+  document.body.appendChild(copyTextarea);
+  copyTextarea.select();
+  document.execCommand("copy");
+  document.body.removeChild(copyTextarea);
+};
+
+document.getElementById("copy-password2").onclick = function() {
+  let copyTextarea = document.createElement("textarea");
+  copyTextarea.style.position = "fixed";
+  copyTextarea.style.opacity = "0";
+  copyTextarea.textContent = document.getElementById("second-pass").value;
+  document.body.appendChild(copyTextarea);
+  copyTextarea.select();
+  document.execCommand("copy");
+  document.body.removeChild(copyTextarea);
+};
+
+document.getElementById("copy-password3").onclick = function() {
+  let copyTextarea = document.createElement("textarea");
+  copyTextarea.style.position = "fixed";
+  copyTextarea.style.opacity = "0";
+  copyTextarea.textContent = document.getElementById("first-pass2").value;
+  document.body.appendChild(copyTextarea);
+  copyTextarea.select();
+  document.execCommand("copy");
+  document.body.removeChild(copyTextarea);
+};
+
+document.getElementById("copy-password4").onclick = function() {
+  let copyTextarea = document.createElement("textarea");
+  copyTextarea.style.position = "fixed";
+  copyTextarea.style.opacity = "0";
+  copyTextarea.textContent = document.getElementById("second-pass2").value;
+  document.body.appendChild(copyTextarea);
+  copyTextarea.select();
+  document.execCommand("copy");
+  document.body.removeChild(copyTextarea);
+};
