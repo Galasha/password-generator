@@ -180,3 +180,9 @@ button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
+
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+}
